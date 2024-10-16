@@ -30,7 +30,7 @@ const useWeather = () => {
         message: "Fetching Weather data......",
       });
 
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${import.meta.env.VITE_WEATHER_API_KEY}&unites=metric`);
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${import.meta.env.VITE_WEATHER_API_KEY}&units=metric`);
 
       if (!response.ok) {
         const errorMessage = `Fetching weather data faild: ${response.status}`;

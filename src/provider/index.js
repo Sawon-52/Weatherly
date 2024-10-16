@@ -1,2 +1,5 @@
 import WeatherProvider from "./WeatherProvider";
-export {WeatherProvider}
+import FavouriteProvider from "./FavouriteProvider";
+import LocationProvider from "./LocationProvider";
+
+export { FavouriteProvider, LocationProvider, WeatherProvider };
